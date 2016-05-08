@@ -55,17 +55,17 @@ BOARD_SEPOLICY_DIRS := \
        device/mediatek/mt6589/sepolicy
 
 BOARD_SEPOLICY_UNION := \
-       device.te \
-       system.te \
-       netd.te \
-       surfaceflinger.te \
-       pvrsrvctl.te \
-       kernel.te \
-       untrusted_app.te \
-       logwrapper.te \
-       domain.te \
-       mtk_device.te \
        app.te \
-       file_contexts
+       device.te \
+       domain.te \
+       file_contexts \
+       kernel.te \
+       logwrapper.te \
+       mtk_device.te \
+       netd.te \
+       pvrsrvctl.te \
+       surfaceflinger.te \
+       system.te \
+       untrusted_app.te  
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
