@@ -55,6 +55,7 @@ BOARD_SEPOLICY_DIRS := \
        device/mediatek/mt6589/sepolicy
 
 BOARD_SEPOLICY_UNION := \
-       device.te
+       device.te \
+       file_contexts
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
