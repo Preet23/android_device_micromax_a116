@@ -1,0 +1,1 @@
+allow logwrapper mtkfb_vsync_device:chr_file ioctl;
