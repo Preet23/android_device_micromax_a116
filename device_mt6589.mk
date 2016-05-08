@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libcorkscrew
 
+# MT6589 xlog
+PRODUCT_PACKAGES += \
+    libxlog
+
 # MT6589 USB Properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
