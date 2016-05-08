@@ -392,7 +392,6 @@ service pvrsrvctl /system/bin/pvrsrvctl
     user root
     group root
     oneshot
-    disabled
 
 # Connectivity related services
 #service hald /system/bin/hald
