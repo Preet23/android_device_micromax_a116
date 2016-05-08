@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     gsm0710muxdmd2
 
+# MT6589 libcorkscrew
+PRODUCT_PACKAGES += \
+	libcorkscrew
+
 # MT6589 USB Properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
