@@ -55,6 +55,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libxlog
 
+# MT6589 Wi-Fi Supplicant Config
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+	$(LOCAL_PATH)/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+	$(LOCAL_PATH)/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+
 # MT6589 USB Properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
