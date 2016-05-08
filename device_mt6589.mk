@@ -51,4 +51,10 @@ PRODUCT_DEVICE := mt6589
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
+BOARD_SEPOLICY_DIRS := \
+       device/mediatek/mt6589/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+       device.te
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)

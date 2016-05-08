@@ -1,0 +1,6 @@
+# MT6589 Graphics Processing Unit
+type powervr_device, dev_type, mlstrustedobject;
+type graphics_device, dev_type;
+
+# MT6589 Wi-Fi
+type wmtWifi_device, dev_type;
