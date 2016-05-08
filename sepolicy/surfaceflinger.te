@@ -1,0 +1,2 @@
+allow surfaceflinger mtkfb_vsync_device:chr_file { read ioctl open };
+allow surfaceflinger mtkfb_vsync_device:chr_file ioctl;

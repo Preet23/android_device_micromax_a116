@@ -58,6 +58,7 @@ BOARD_SEPOLICY_UNION := \
        device.te \
        system.te \
        netd.te \
+       surfaceflinger.te \
        file_contexts
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
