@@ -1,2 +1,2 @@
-# android_device_mt6589
-MT6589 Device Tree
+# android_device_bqAquaris5HD
+bqAquaris5HD Device Tree
