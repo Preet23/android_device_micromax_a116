@@ -5,3 +5,13 @@
 
 * Non-Working
   * Nothing / Unknown
+
+Information
+-----------
+
+* Kernel
+
+    ```shell
+    android_device_mt6589 uses a precompiled 3.4.67 Kernel
+    ```
+[![License](https://img.shields.io/hexpm/l/plug.svg)](LICENSE.md)
