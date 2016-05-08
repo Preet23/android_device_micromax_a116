@@ -3,6 +3,7 @@
 /dev/mtkfb_vsync	u:object_r:mtkfb_vsync_device:s0
 /dev/Vcodec			u:object_r:Vcodec_device:s0
 /dev/pvr_sync		u:object_r:gpu_device:s0
+/system/bin/pvrsrvctl	u:object_r:pvrsrvctl_exec:s0
 
 # MT6589 Wi-Fi Device
 /dev/wmtWifi		u:object_r:wmtWifi_device:s0
