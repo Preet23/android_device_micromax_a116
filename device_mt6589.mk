@@ -64,6 +64,7 @@ BOARD_SEPOLICY_UNION := \
        untrusted_app.te \
        logwrapper.te \
        domain.te \
+       mtk_device.te \
        file_contexts
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)

@@ -1,0 +1,2 @@
+type Vcodec_device, dev_type;
+type mtkfb_vsync_device, dev_type;
