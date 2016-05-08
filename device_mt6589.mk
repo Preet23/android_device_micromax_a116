@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.mt6589.rc:root/ueventd.mt6589.rc \
     $(LOCAL_KERNEL):kernel
 
+# MT6589 Wi-Fi
+PRODUCT_PACKAGES += \
+	wpa_supplicant
+
 # MT6589 USB Properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
