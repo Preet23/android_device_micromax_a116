@@ -38,6 +38,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	wpa_supplicant
 
+# MT6589 PowerVR Service Control
+PRODUCT_PACKAGES += \
+	pvrsrvctl
+
 # MT6589 USB Properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp
