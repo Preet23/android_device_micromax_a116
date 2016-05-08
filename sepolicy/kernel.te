@@ -1,0 +1,1 @@
+allow kernel mtkfb_vsync_device:chr_file { create setattr };
