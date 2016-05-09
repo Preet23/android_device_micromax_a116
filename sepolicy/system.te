@@ -1,2 +1,3 @@
+# JBCDev: Allow Kitkat 3.4.67+ Kernel to boot Lollipop+
 allow netd kernel:system { module_request };
 allow netd tmpfs:chr_file rw_file_perms;
