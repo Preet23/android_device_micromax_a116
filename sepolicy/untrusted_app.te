@@ -1,1 +1,2 @@
+# JBCDev: Untrusted Apps can use MediaTek Framebuffer
 allow untrusted_app mtkfb_vsync_device:chr_file getattr;
