@@ -1,1 +1,2 @@
+# JBCDev: Allow MediaTek Framebuffer to be used
 allow kernel mtkfb_vsync_device:chr_file { create setattr };

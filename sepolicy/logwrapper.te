@@ -1,1 +1,2 @@
+# JBCDev: Allow logwrapper to use MT6589 parts
 allow logwrapper mtkfb_vsync_device:chr_file ioctl;

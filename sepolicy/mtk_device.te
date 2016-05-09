@@ -1,2 +1,3 @@
+# JBCDev: MT6589 PowerVR SGX544 SELinux Capabilities
 type Vcodec_device, dev_type;
 type mtkfb_vsync_device, dev_type;

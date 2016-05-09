@@ -14,6 +14,9 @@
 
 -include vendor/mediatek/mt6589/BoardConfigVendor.mk
 
+# MT6589 Specific GPS Include
+TARGET_SPECIFIC_HEADER_PATH := device/mediatek/mt6589/include
+
 # MT6589 Platform
 TARGET_BOARD_PLATFORM := mt6589
 TARGET_NO_BOOTLOADER := true
@@ -69,6 +72,49 @@ MTK_HARDWARE := true
 COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
 COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 
+# MT6589 Offline Charging: Thanks to @fire855
+ADDITIONAL_DEFAULT_PROPERTIES += ro.mount.fs=EXT4
+
+# MT6589 RIL
+BOARD_RIL_CLASS := ../../../device/mediatek/mt6589/ril/
+
+BOARD_CONNECTIVITY_VENDOR := MediaTek
+BOARD_CONNECTIVITY_MODULE := conn_soc
+
+# MT6589 Wi-Fi
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mt66xx
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mt66xx
+WIFI_DRIVER_FW_PATH_PARAM:="/dev/wmtWifi"
+WIFI_DRIVER_FW_PATH_STA:=STA
+WIFI_DRIVER_FW_PATH_AP:=AP
+WIFI_DRIVER_FW_PATH_P2P:=P2P
+
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_MTK := true
+BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/mediatek/mt6589/bluetooth
+
 # MT6589 CWM
 TARGET_RECOVERY_FSTAB := device/mediatek/mt6589/rootdir/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+BOARD_SEPOLICY_DIRS := \
+       device/mediatek/mt6589/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+       app.te \
+       device.te \
+       domain.te \
+       file_contexts \
+       kernel.te \
+       logwrapper.te \
+       mtk_device.te \
+       netd.te \
+       pvrsrvctl.te \
+       surfaceflinger.te \
+       system.te \
+       untrusted_app.te  
