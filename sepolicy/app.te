@@ -1,1 +1,2 @@
+# JBCDev: Allow Userspace applications to use MT6589 GPU
 allow appdomain gpu_device:chr_file rw_file_perms;
