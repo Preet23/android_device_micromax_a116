@@ -1,2 +1,3 @@
+# JBCDev: Allow Wi-Fi-Related to work
 allow netd wmtWifi_device:chr_file write;
 allow netd wmtWifi_device:chr_file open;
