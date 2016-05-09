@@ -1,2 +1,5 @@
+# JBCDev: Surfaceflinger SELinux capabilities
 allow surfaceflinger mtkfb_vsync_device:chr_file { read ioctl open };
 allow surfaceflinger mtkfb_vsync_device:chr_file ioctl;
+allow surfaceflinger debug_prop:property_service set;
+allow surfaceflinger self:capability { net_admin sys_nice };
