@@ -1,1 +1,2 @@
+# JBCDev: Allow PowerVR SGX 544 to be used
 allow domain powervr_device:chr_file rw_file_perms;
