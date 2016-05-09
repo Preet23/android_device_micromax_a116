@@ -14,6 +14,9 @@
 
 -include vendor/mediatek/mt6589/BoardConfigVendor.mk
 
+# MT6589 Specific GPS Include
+TARGET_SPECIFIC_HEADER_PATH := device/mediatek/mt6589/include
+
 # MT6589 Platform
 TARGET_BOARD_PLATFORM := mt6589
 TARGET_NO_BOOTLOADER := true
