@@ -1,0 +1,32 @@
+# JBCDev: Probably keep gpu-related things with contexts is good
+# Policy File of /system/bin/bootanimation Executable File
+type bootanimation_exec , exec_type, file_type;
+type bootanimation ,domain;
+permissive bootanimation;
+init_daemon_domain(bootanimation)
+allow bootanimation device:chr_file { read ioctl open };
+allow bootanimation mali_device:chr_file ioctl;
+allow bootanimation property_socket:sock_file write;
+allow bootanimation surfaceflinger:binder { transfer call };
+allow bootanimation surfaceflinger:fd use;
+allow bootanimation mali_device:chr_file { read write getattr open };
+allow bootanimation mediaserver:binder call;
+allow bootanimation servicemanager:binder call;
+allow bootanimation mediaserver:binder transfer;
+allow bootanimation linker_exec:file read;
+allow bootanimation mali_device:chr_file { read write getattr open };
+allow bootanimation mediaserver:binder { transfer call };
+allow bootanimation servicemanager:binder call;
+allow bootanimation logwrapper:binder { transfer call };
+allow bootanimation logwrapper:fd use;
+allow bootanimation self:netlink_socket { write create };
+allow bootanimation  property_type:property_service set;
+allow bootanimation aee_aed:process sigchld;
+allow bootanimation device:chr_file { write getattr };
+allow bootanimation logwrapper:binder { transfer call };
+allow bootanimation logwrapper:fd use;
+allow bootanimation self:netlink_socket { read bind create write };
+allow bootanimation aee_aed:unix_stream_socket connectto;
+allow bootanimation block_device:blk_file read;
+allow bootanimation device:chr_file { write getattr };
+allow bootanimation terservice:binder call;

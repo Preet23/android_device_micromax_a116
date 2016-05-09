@@ -1,0 +1,4 @@
+# JBCDev: Probably keep gpu-related things with contexts is good
+allow resmon bootanimation:dir search;
+allow resmon bootanimation:file { read open };
+allow resmon bootanimation:dir getattr;

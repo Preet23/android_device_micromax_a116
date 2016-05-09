@@ -1,0 +1,9 @@
+# JBCDev: Probably keep gpu-related things with contexts is good
+allow aee_aed bootanimation:dir { read getattr open search };
+allow aee_aed bootanimation:file { read getattr open };
+allow aee_aed bootanimation:process { signal ptrace };
+allow aee_aed bootanimation_exec:file { read getattr open };
+allow aee_aed bootanimation:dir { read search open getattr };
+allow aee_aed bootanimation:file { read getattr open };
+allow aee_aed bootanimation:file { read getattr open };
+allow aee_aed bootanimation:process sigstop;

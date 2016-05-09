@@ -1,2 +1,6 @@
 # JBCDev: Allow logwrapper to use MT6589 parts
 allow logwrapper mtkfb_vsync_device:chr_file ioctl;
+
+# JBCDev: Probably keep gpu-related things with contexts is good
+allow logwrapper bootanimation:binder { transfer call };
+allow logwrapper bootanimation:fd use;

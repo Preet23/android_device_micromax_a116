@@ -1,2 +1,5 @@
 # JBCDev: Untrusted Apps can use MediaTek Framebuffer
 allow untrusted_app mtkfb_vsync_device:chr_file getattr;
+
+# JBCDev: Probably keep gpu-related things with contexts is good
+allow untrusted_app bootanimation_exec:file getattr;
