@@ -4,3 +4,6 @@ type graphics_device, dev_type;
 
 # MT6589 Wi-Fi
 type wmtWifi_device, dev_type;
+
+# MT6589 Extras
+type ion_device, dev_type, mlstrustedobject;

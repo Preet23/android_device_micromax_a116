@@ -10,3 +10,5 @@
 # MT6589 Wi-Fi Device
 /dev/wmtWifi		u:object_r:wmtWifi_device:s0
 
+# MT6589 Extras
+/dev/ion		u:object_r:ion_device:s0
