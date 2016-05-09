@@ -4,6 +4,9 @@
 /dev/Vcodec			u:object_r:Vcodec_device:s0
 /dev/pvr_sync		u:object_r:gpu_device:s0
 
+# JBCDev: Probably, all GPU-Related binaries should contain it's policy
+/system/bin/bootanimation u:object_r:bootanimation_exec:s0
+
 # MT6589 PowerVR Service Control SELinux Extension
 /system/bin/pvrsrvctl	u:object_r:pvrsrvctl_exec:s0
 

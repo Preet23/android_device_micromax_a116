@@ -106,15 +106,23 @@ BOARD_SEPOLICY_DIRS := \
        device/mediatek/mt6589/sepolicy
 
 BOARD_SEPOLICY_UNION := \
+       aee_aed.te \
        app.te \
+       batterywarning.te \
+       bootanimation.te \
        device.te \
        domain.te \
        file_contexts \
+       init.te \
        kernel.te \
        logwrapper.te \
+       mediaserver.te \
        mtk_device.te \
        netd.te \
        pvrsrvctl.te \
+       resmon.te \
+       servicemanager.te \
        surfaceflinger.te \
        system.te \
+       system_server.te \
        untrusted_app.te  

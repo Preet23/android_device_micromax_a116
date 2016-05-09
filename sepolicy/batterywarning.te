@@ -1,0 +1,4 @@
+# JBCDev: Probably keep gpu-related things with contexts is good
+allow batterywarning bootanimation:dir getattr;
+allow batterywarning bootanimation:dir { read search open };
+allow batterywarning bootanimation:file { read open };

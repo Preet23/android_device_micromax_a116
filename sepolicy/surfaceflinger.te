@@ -3,3 +3,11 @@ allow surfaceflinger mtkfb_vsync_device:chr_file { read ioctl open };
 allow surfaceflinger mtkfb_vsync_device:chr_file ioctl;
 allow surfaceflinger debug_prop:property_service set;
 allow surfaceflinger self:capability { net_admin sys_nice };
+
+# JBCDev: Probably keep gpu-related things with contexts is good
+allow surfaceflinger bootanimation:fd use;
+allow surfaceflinger bootanimation:binder transfer;
+allow surfaceflinger bootanimation:dir search;
+allow surfaceflinger bootanimation:file { read getattr open };
+allow surfaceflinger bootanimation:dir search;
+allow surfaceflinger bootanimation:file { read getattr open };
