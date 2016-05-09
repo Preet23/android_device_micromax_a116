@@ -101,3 +101,20 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/mediatek/mt6589/bluetooth
 # MT6589 CWM
 TARGET_RECOVERY_FSTAB := device/mediatek/mt6589/rootdir/recovery.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+BOARD_SEPOLICY_DIRS := \
+       device/mediatek/mt6589/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+       app.te \
+       device.te \
+       domain.te \
+       file_contexts \
+       kernel.te \
+       logwrapper.te \
+       mtk_device.te \
+       netd.te \
+       pvrsrvctl.te \
+       surfaceflinger.te \
+       system.te \
+       untrusted_app.te  
